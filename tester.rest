@@ -1,0 +1,17 @@
+### membuat create user
+POST http://localhost:9000/api/users/create
+Content-Type: application/json
+
+# membuat data secara manual untuk tester, dan harus diubah apabila ada yang unique
+{
+    "username": "asudhasida",
+    "email" : "asudhasida@gmail.com",
+    "password": "wrrsfar32753u537sdgs"
+}
+
+### membuat read user serta menampilkan dengan batasan per page nya yaitu : 10
+# GET http://localhost:9000/api/users/read
+Content-Type: application/json
+
+### cara kedua
+GET http://localhost:9000/api/users/read?page=2&limit=10  
